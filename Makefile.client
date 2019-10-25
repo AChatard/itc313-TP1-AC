@@ -4,9 +4,9 @@ CXX        = g++
 CXXFLAGS   = -Wall -Wextra -std=c++11
 DEPFLAGS   = -MMD
 LDFLAGS    = 
-SRCS       = Date.cpp Date-test.cpp
+SRCS       = Client.cpp test.cpp
 OBJS       = $(SRCS:.cpp=.o)
-TARGET     = Date-test 
+TARGET     = Client-test 
 DEPS	   = $(OBJS:.o=.d)
 
 all: $(TARGET)
